@@ -1,0 +1,25 @@
+/* Clear fix from webtoolkit.clearfix.css */
+
+.clear:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clear {
+    clear: both !important;
+	display: block;
+    height: 1px;
+    width: 100%;
+}
+ 
+html[xmlns] .clear {
+	display: block;
+}
+ 
+* html .clear {
+	height: 1%;
+}
